@@ -3,44 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Boracay-SAND/resources/icons/icon.png">
-    <link rel="stylesheet" href="/Boracay-SAND/designs/universal.css">
-    <script src="/Boracay-SAND/scripts/navigation.js"></script>
-    <script src="/Boracay-SAND/scripts/weather_time.js"></script>
-    <script src="/Boracay-SAND/scripts/login.js"></script>
+
+    <link rel="icon" href="/boracay-SAND/resources/icons/icon.png">
+    <link rel="stylesheet" href="/boracay-SAND/designs/landingpage.css">
+
+    <script src="/boracay-SAND/scripts/navigation.js"></script>
+    <script src="/boracay-SAND/scripts/weather_time.js"></script>
+    <script src="/boracay-SAND/scripts/login.js"></script>
+
     <title>SAND</title>
 </head>
 <body>
 
     <header>
-        <!--Head-->
-        <div class="navigation">
-            <div class="logo">
-                <img src="/Boracay-SAND/resources/icons/sand.png" height="75px" width="150px">
+        <!--Banner-->
+        <div class="banner-container">
+            <img src="/boracay-SAND/resources/images/A25.png" class="banner">
+            <div class="banner-overlay"></div>
+                <img src="/boracay-SAND/resources/icons/sand.png">
+            </div>
+        <img src="/boracay-SAND/resources/icons/arrow_downwards.png" class="arrow-down">
+        </div>
+        <div class="logo">
+            <div class="location">
+                <img src="/boracay-SAND/resources/icons/location.png" alt="Location Icon">
+                <p>Philippines</p>
+            </div>
+            <img src="/boracay-SAND/resources/icons/sand.png">
+            <h1>Start Your Boracay Adventure Here</h1>
+            <p>Explore Smarter. Travel Better.</p>
+            <div class="logo-buttons">
+                <a href="homepage.html"><button class="explr">Explore Now</button></a>
             </div>
         </div>
-    </header>
-
-    <main>
-        <!--Slogan-->
-        <div class="slogan">
-            <h1>Start Your Boracay</h1>
-            <h1>Adventure Here</h1>
-            <p>Explore Smarter. Travel Better.</p>
-        </div>
-
-        <!--Login Button-->
-        <div class="explr-btn">
-            <button onclick="document.getElementById('loginModal').style.display='block'">
-                Login
-                <img src="/Boracay-SAND/resources/icons/arrow_right_black.png" height="40" width="40">
-            </button>
-        </div>
-
-        <!--Clock-->
+                    <!--Clock-->
         <div class="bottom-right-wrapper">
             <div class="date-time-box">
-                <img src="/Boracay-SAND/resources/icons/schedule.png" height="80" width="80" class="clock-icon">
+                <img src="/boracay-SAND/resources/icons/schedule.png" height="80" width="80" class="clock-icon">
 
                 <div class="date-time-text">
                     <span id="current-date"></span>
@@ -49,36 +48,7 @@
                 </div>
             </div>
         </div>
-    </main>
-
-    <!--Login-->
-    <div id="loginModal" class="modal">
-
-        <div class="modal-content animate">
-                    <div class="imgcontainer">
-            <img src="/Boracay-SAND/resources/icons/sand_black.png" class="avatar">
-        </div>
-
-            <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
-
-            <div class="container">
-
-                <label><b>Username</b></label>
-                <input type="text" id="username" placeholder="Enter Username" required>
-
-                <label><b>Password</b></label>
-                <input type="password" id="password" placeholder="Enter Password" required>
-
-                <button type="button" onclick="login()" class="login-btn">Login</button>
-
-                <div class="chcbx">
-                    <label>
-                        <input type="checkbox" checked="checked"> Remember me
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
+    </header>
 
     <footer>
         <div class="about"></div>
@@ -86,5 +56,3 @@
 
 </body>
 </html>
-
-
