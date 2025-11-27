@@ -1,4 +1,4 @@
-@import url(./universal.css);
+@import url(universal.css);
 .modal {
     display: none;
     position: fixed;
@@ -73,3 +73,4 @@ input[type="password"] {
     padding-top: 20px;
 
 }
+
