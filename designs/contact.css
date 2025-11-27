@@ -1,4 +1,4 @@
-@import url(universal.css);
+@import url(./universal.css);
 
 body {
     margin: 0;
@@ -273,3 +273,4 @@ body {
         padding: 6px 10px;
     }
 }
+
