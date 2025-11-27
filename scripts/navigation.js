@@ -5,9 +5,10 @@ function dropbtn() {
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
 
     if (menu.style.display === "block") {
-        icon.src = "/resources/icons/close.png";  
+        icon.src = "/Boracay-SAND/resources/icons/close.png";  
     } else {
-        icon.src = "/resources/icons/person.png"; 
+        icon.src = "/Boracay-SAND/resources/icons/person.png"; 
     }
 }
+
 
