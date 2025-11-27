@@ -1,4 +1,4 @@
-@import url(/universal.css);
+@import url(universal.css);
 .navigation{
     display: flex;
     align-items: center;
@@ -38,4 +38,5 @@
     padding-right: 40px;
 
 }
+
 
