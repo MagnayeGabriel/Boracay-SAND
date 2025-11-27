@@ -1,58 +1,179 @@
-@import url(./universal.css);
-body{
-    background-image: url(/Boracay-SAND/resources/images/A25.png);
-    background-size: 100% 125%;       
-    background-repeat: no-repeat;
+@import url(universal.css);
+@import url(time.css);
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/resources/images/A25.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
 }
-.logo{
-    padding: 20px;
-    z-index: -1;
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
 }
-.slogan{
-    margin-top: 20px;
-    padding: 50px;
+
+.banner-container img.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-.slogan h1{
-    font-size: 60px;
-    line-height: 0.8;
-    color: var(--color1);
-    text-shadow: var(--text-shadow);
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
 }
-.slogan{
-    padding: 50px;
-}
-.slogan p{
-    padding-top: 5px;
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: var(--color1);
-    text-shadow: var(--text-shadow);
-    letter-spacing: 4px;
-}
-.explr-btn{
-    padding-left: 50px;
-}
-.explr-btn a{
-    text-decoration: none;
-}
-.explr-btn button{
-    height: 60px;
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    align-items: center;    
-    gap: 8px;               
-    padding: 12px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    z-index: 10;
+    color: var(--color1);
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.logo h1 {
+    max-width: 1000px;
+    font-size: 25px;
+}
+.logo p {
+    max-width: 1000px;
     font-size: 20px;
-    border-radius: 50px;
+}
+.logo-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-buttons button {
+    padding: 12px 25px;
+    font-size: 20px;
+    background-color: var(--color1);
+    color: var(--color2);
     border: none;
-    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    cursor: pointer;
     transition: 0.3s;
+    font-family: "Montserrat";
+    text-shadow: var(--text-shadow);
+}
+.logo-buttons button.explr{
+    padding: 12px 61px;
+}
+.logo-buttons button:hover {
+    background-color: var(--color4);
 }
 
-.explr-btn button:hover{
-    background-color: var(--color3);
-    transition: 0.3s;
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
+.location img {
+    width: 25px;
+}
 
+.location p {
+    margin: 0;
+    font-size: 25px;
+    color: var(--color1);
+    text-shadow: var(--text-shadow);
+}
 
+.arrow-down {
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    z-index: 10;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .banner-container {
+        overflow: hidden;
+    }
+
+    .logo-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo-buttons button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+    }
+
+    .logo p {
+        max-width: 1000px;
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .location img {
+        width: 20px;
+    }
+
+    .location p {
+        font-size: 20px;
+    }
+
+    .arrow-down {
+        width: 40px;
+        bottom: 15px;
+    }
+
+}
