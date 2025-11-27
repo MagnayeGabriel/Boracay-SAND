@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/resources/icons/icon.png">
+    <link rel="stylesheet" href="/designs/landingpage.css">
+    <script src="/scripts/navigation.js"></script>
+    <script src="/scripts/weather_time.js"></script>
+    <script src="/scripts/login.js"></script>
+    <title>SAND</title>
+</head>
+<body>
+
+    <header>
+        <!--Head-->
+        <div class="navigation">
+            <div class="logo">
+                <img src="/resources/icons/sand.png" height="75px" width="150px">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Slogan-->
+        <div class="slogan">
+            <h1>Start Your Boracay</h1>
+            <h1>Adventure Here</h1>
+            <p>Explore Smarter. Travel Better.</p>
+        </div>
+
+        <!--Login Button-->
+        <div class="explr-btn">
+            <button onclick="document.getElementById('loginModal').style.display='block'">
+                Login
+                <img src="/resources/icons/arrow_right_black.png" height="40" width="40">
+            </button>
+        </div>
+
+        <!--Clock-->
+        <div class="bottom-right-wrapper">
+            <div class="date-time-box">
+                <img src="/resources/icons/schedule.png" height="80" width="80" class="clock-icon">
+
+                <div class="date-time-text">
+                    <span id="current-date"></span>
+                    <span id="current-time"></span>
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Login-->
+    <div id="loginModal" class="modal">
+
+        <div class="modal-content animate">
+                    <div class="imgcontainer">
+            <img src="/resources/icons/sand_black.png" class="avatar">
+        </div>
+
+            <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+
+            <div class="container">
+
+                <label><b>Username</b></label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+
+                <button type="button" onclick="login()" class="login-btn">Login</button>
+
+                <div class="chcbx">
+                    <label>
+                        <input type="checkbox" checked="checked"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="about"></div>
+    </footer>
+
+</body>
+</html>
