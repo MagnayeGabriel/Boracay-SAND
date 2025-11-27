@@ -1,9 +1,10 @@
 @font-face{
     font-family: 'RockSalt';
-    src: url(/resources/fonts/Rock_Salt/RockSalt-Regular.ttf);
+    src: url(./Boracay-SAND/resources/fonts/Rock_Salt/RockSalt-Regular.ttf);
 }
 
 @font-face{
     font-family: 'Montserrat';
-    src: url(/resources/fonts/Montserrat/static/Montserrat-Light.ttf);
+    src: url(./Boracay-SAND/resources/fonts/Montserrat/static/Montserrat-Light.ttf);
+
 }
