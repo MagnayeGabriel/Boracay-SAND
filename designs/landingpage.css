@@ -1,0 +1,56 @@
+@import url(universal.css);
+body{
+    background-image: url(/resources/images/A25.png);
+    background-size: 100% 125%;       
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    padding: 20px;
+    z-index: -1;
+}
+.slogan{
+    margin-top: 20px;
+    padding: 50px;
+}
+.slogan h1{
+    font-size: 60px;
+    line-height: 0.8;
+    color: var(--color1);
+    text-shadow: var(--text-shadow);
+}
+.slogan{
+    padding: 50px;
+}
+.slogan p{
+    padding-top: 5px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: var(--color1);
+    text-shadow: var(--text-shadow);
+    letter-spacing: 4px;
+}
+.explr-btn{
+    padding-left: 50px;
+}
+.explr-btn a{
+    text-decoration: none;
+}
+.explr-btn button{
+    height: 60px;
+    display: flex;
+    align-items: center;    
+    gap: 8px;               
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    transition: 0.3s;
+}
+
+.explr-btn button:hover{
+    background-color: var(--color3);
+    transition: 0.3s;
+}
+

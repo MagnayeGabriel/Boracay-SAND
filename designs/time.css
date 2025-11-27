@@ -1,0 +1,36 @@
+@import url(universal.css);
+.bottom-right-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;  
+    gap: 20px;
+    color: var(--color1);
+}
+.date-time-text{
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+}
+.clock-icon{
+    object-fit: contain;  
+    margin-bottom: 8px;
+    z-index: -1;
+}
+.date-time-box{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.underline{
+    width: 100px;
+    height: 2px;
+    color: var(--color1);
+    margin-top: 4px;
+}
