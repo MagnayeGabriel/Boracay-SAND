@@ -1,10 +1,4 @@
-@import url(./fonts.css);
-@import url(./login.css);
-@import url(./time.css);
-@import url(./navigation.css);
-@import url(./homepage.css);
-@import url(./contact.css);
-@import url(./landingpage);
+@import url(fonts.css);
 :root{
     --color1: white;
     --color2: black;
@@ -14,5 +8,3 @@
     --text-shadow2: 1px 1px 5px black;
     --box-shadow: 1px 1px 50px black;
 }
-
-
