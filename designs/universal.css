@@ -4,6 +4,7 @@
 @import url(./navigation.css);
 @import url(./homepage.css);
 @import url(./contact.css);
+@import url(./landingpage);
 :root{
     --color1: white;
     --color2: black;
@@ -13,4 +14,5 @@
     --text-shadow2: 1px 1px 5px black;
     --box-shadow: 1px 1px 50px black;
 }
+
 
